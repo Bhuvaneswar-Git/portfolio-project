@@ -1,0 +1,60 @@
+.breadcrum-area{
+    position: relative;
+    height: 370px;
+}
+
+.bg-top-img{
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-overlay-img-top{
+    content: " ";
+    position: absolute;
+    height: 370px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgb(0, 0, 0, 0.4);
+}
+
+.breadcrum-content{
+    position: relative;
+    z-index: 5;
+    margin-top: 70px;
+}
+
+.breadcrum-area .breadcrum-content .page-title{
+    color: #fff !important;
+}
+
+.breadcrum-content .breadcrum .breadcrum-item a{
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.breadcrum-content .breadcrum .breadcrum-item a:hover{
+    color: #fc6060;
+}
+
+.breadcrum-content .breadcrum .breadcrum-item a svg{
+    margin: 0 5px;
+}
+
+.breadcrum-content .breadcrum li::marker{
+    content: none;
+}
+
+.breadcrum-link{
+    display: flex;
+    justify-content: center;
+}
+
+.current-page{
+    color: #fc6060 ;
+}

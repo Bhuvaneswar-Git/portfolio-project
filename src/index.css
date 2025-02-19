@@ -1,3 +1,5 @@
+/* @import 'themify-icons/css/themify-icons.css'; */
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +12,28 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+a, 
+a:focus,
+a:active,
+a:hover{
+    transition-duration: 500ms;
+    font-weight: 500;
+    color: #252525 ;
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600 !important;
+  color: #252525 !important;
+  line-height: 1.3 !important;
+}
+
+p{
+  line-height: 1.9;
+  color: #636363;
+  font-size: 16px;
+  font-weight: 400;
 }

@@ -1,0 +1,33 @@
+.contact-padding{
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.contact-area .contact-title{
+    font-size: 56px;
+}
+
+.mb-30{
+    margin-bottom: 30px;
+}
+
+.contact-info p{
+    margin-bottom: 5px;
+}
+
+.contact-area .contact-info a{
+    text-decoration: none;
+    color: #252525;
+}
+
+#map{
+    height: 600px;
+    width: 100%;
+}
+
+#map iframe{
+    height: 100%;
+    width: 100%;
+    border: none !important;
+    border-radius: 10px;
+}

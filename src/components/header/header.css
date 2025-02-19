@@ -1,0 +1,80 @@
+.header-area{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.main-header-area{
+    height: 70px;
+    position: relative;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition-duration: 500ms;
+}
+ 
+.nav-bar-content{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.classynav{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-top: 12px;
+}
+
+.nav-bar-content .navbar{
+    align-items: center;
+}
+
+.navbar .classynav .link-redirect{
+    display: flex;
+    align-items: center;
+}
+
+.navbar .classynav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0 20px;
+}
+/* 
+.navbar .classynav ul li{
+    display: inline-block;
+} */
+
+.navbar .classynav ul li::marker{
+    content: none;
+}
+
+.main-header-area.sticky{
+    background-color: #000000;
+}
+
+.navbar .classynav ul li a:hover{
+    color: #fc6060;
+    transition-duration: 500ms;
+}
+
+.navbar .classynav .link-redirect li {
+    position: relative; /* Ensure relative positioning for absolute child elements */
+}
+
+.navbar .classynav .link-redirect li a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #fc6060;
+    transition: width 0.3s ease;
+}
+
+.navbar .classynav .link-redirect li a.active::after {
+  width: 60%;
+}

@@ -1,0 +1,25 @@
+.section-padding{
+    padding-top: 80px;
+    padding-bottom: 0px;
+}
+
+.about-us-title{
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.about-us-title-underline{
+    width: 70px;
+    height: 3px;
+    background-color: #fc6060;
+    margin-bottom: 30px;
+}
+
+.about-video-area img {
+    border-radius: 10px;
+    box-shadow: 3px 0px 24px rgba(0,0,0,0.15);
+}
+
+.mb-80{
+    margin-bottom: 80px;
+}

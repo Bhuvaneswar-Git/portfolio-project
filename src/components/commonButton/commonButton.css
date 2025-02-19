@@ -1,0 +1,25 @@
+.common-btn{
+    position: relative;
+    z-index: 1;
+    height: 46px;
+    line-height: 42px;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    max-width: 160px;
+    border: #fc6060 2px solid;
+    padding: 0px 30px;
+    border-radius: 60px;
+    color: #fff;
+    background-color: transparent;
+    text-align: center;
+    text-transform: capitalize;
+    display: inline-block;
+    transition: 0.3s ease-in-out;
+}
+
+.common-btn:hover{
+    color: #fff !important; ;
+    background-color: #fc6060;
+    box-shadow: 0 3px 40px 18px rgba(15, 15, 15, 0.10);
+}
