@@ -3,8 +3,9 @@ import { IoHomeOutline } from "react-icons/io5";
 import './breadcrumb.css';
 
 const Breadcrumb = ({pageTitle,currentPage}) => {
+  
   return (
-    <div>
+    <>
       <section className='breadcrum-area bg-top-img' style={{backgroundImage: 'url(/images/jpg/bg-img-3.jpg)'}}>
         <div className="container h-100">
             <div className="row h-100 align-items-center">
@@ -28,7 +29,7 @@ const Breadcrumb = ({pageTitle,currentPage}) => {
         </div>    
       </section>
       <div className='bg-overlay-img-top'></div>
-    </div>
+    </>
   )
 }
 

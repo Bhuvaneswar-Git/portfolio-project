@@ -31,7 +31,7 @@ const Contact = () => {
                 </div>
             </div>
       </section>
-      <section className='contact-map' >
+      <section className='contact-map section-padding-0-80' >
             <div className="container">
                 <div id='map'>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62456.14392245284!2d79.77199360885908!3d11.939220051890727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5361ab8e49cfcf%3A0xcc6bd326d2f0b04e!2sPuducherry!5e0!3m2!1sen!2sin!4v1739948010283!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>

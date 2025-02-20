@@ -31,3 +31,8 @@
     border: none !important;
     border-radius: 10px;
 }
+
+.section-padding-0-80{
+    padding-top: 0;
+    padding-bottom: 80px;
+}

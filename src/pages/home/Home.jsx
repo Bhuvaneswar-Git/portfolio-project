@@ -1,6 +1,7 @@
 import React from 'react';
 import './home.css';
 import CommonButton from '../../components/commonButton/CommonButton';
+import Gallery from '../gallery/Gallery';
 
 
 const Home = () => {
@@ -28,9 +29,9 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className="owl-nav"></div>
         </div>
       </section>
+      <Gallery showBreadcrumb={false}/>
     </>
   )
 }

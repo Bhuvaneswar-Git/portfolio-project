@@ -4,8 +4,8 @@
 }
 
 .container-fluid{
-    padding-right: 10%;
-    padding-left: 10%;
+    padding-right: 10% !important;
+    padding-left: 10% !important;
 }
 
 .project-menu{
@@ -33,4 +33,31 @@
     height: 2px;
     background-color: #fc6060;
     transition: width 0.3s ease;
+}
+
+.mb-30{
+    margin-bottom: 30px;
+}
+
+.single-gallery-image{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.single-portfolio-content{
+    overflow: hidden;
+    /* display: inline-block; */
+}
+
+.single-portfolio-content img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+    transform-origin:center center ;
+}
+
+.single-portfolio-content img:hover{
+    transform: scale(1.15);
 }
