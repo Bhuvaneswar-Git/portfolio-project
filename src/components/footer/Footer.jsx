@@ -1,5 +1,7 @@
 import React from 'react';
 import './footer.css';
+import {FaYoutube, FaFacebookF, FaInstagram, FaWhatsapp  } from 'react-icons/fa';
+
 
 const footer = () => {
   return (
@@ -17,8 +19,10 @@ const footer = () => {
                           <a href="">Bhuvaneswar</a>
                           </div>
                         <div className="social-info">
-                            <a href=""><i className='ti-github'></i></a>
-                            <a href=""><i className='ti-linkedin'></i></a>
+                          <a href="#"><FaYoutube/></a>
+                          <a href="#"><FaFacebookF/></a>
+                          <a href="#"><FaInstagram/></a>
+                          <a href="#"><FaWhatsapp/></a>
                         </div>
                     </div>
                 </div>

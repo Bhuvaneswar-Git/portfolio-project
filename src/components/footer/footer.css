@@ -11,13 +11,20 @@
 }
 
 .copywrite-text p {
-    margin: 0 ; /* Add some spacing */
+    margin: 0 ; 
 }
 
 .logo {
-    margin: 10px 0; /* Add spacing */
+    margin: 10px 0; 
 }
 
-.social-info a {
-    margin: 0 5px; /* Add spacing between icons */
+.social-info a svg {
+    margin: 0 10px; 
+    font-size: 18px;
+    color: #252525;
+    transition-duration: 500ms;
+}
+
+.social-info a svg:hover {
+    color: #fc6060;
 }

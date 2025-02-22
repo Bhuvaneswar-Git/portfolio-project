@@ -43,9 +43,6 @@ const Header = () => {
                                         </li>
                                 ))}
                                 </ul>
-                                <div className='search-icon'>
-                                    <CiSearch />
-                                </div>
                             </div>
                         </div>
                     </nav>

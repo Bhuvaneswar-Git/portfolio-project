@@ -2,9 +2,7 @@ import React from 'react';
 import './home.css';
 import CommonButton from '../../components/commonButton/CommonButton';
 import Gallery from '../gallery/Gallery';
-import ScrollAd from "../../components/scrollAd/ScrollAd.jsx"
 import Header from '../../components/header/Header.jsx';
-import Footer from '../../components/footer/Footer.jsx';
 
 
 const Home = () => {
@@ -36,8 +34,6 @@ const Home = () => {
         </div>
       </section>
       <Gallery showBreadcrumb={false}/>
-      <ScrollAd/>
-      <Footer/>
     </div>
   )
 }

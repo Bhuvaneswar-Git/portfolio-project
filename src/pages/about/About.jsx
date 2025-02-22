@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './about.css';
 import ScrollAd from "../../components/scrollAd/ScrollAd.jsx"
 import Header from '../../components/header/Header.jsx';
@@ -7,6 +7,8 @@ import Breadcrumb  from '../../components/breadcrumb/Breadcrumb.jsx';
 import CommonButton from '../../components/commonButton/CommonButton.jsx';
 import { IoCamera, IoFilmOutline } from "react-icons/io5";
 import { FaPencilAlt, FaYoutube, FaFacebookF, FaInstagram, FaWhatsapp  } from 'react-icons/fa';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const About = () => {
 
@@ -16,9 +18,9 @@ const About = () => {
         {id:3, title:'Modern Equipments', icon:<IoCamera/>},
     ]
 
-    const WhyChooseUsCard = ({title, icon})=> (
+    const WhyChooseUsCard = ({title, icon,delay})=> (
         <div className="col-12 col-lg-4">
-            <div className="why-choose-us-content mb-80 text-center position-relative">
+            <div className="why-choose-us-content mb-80 text-center position-relative" data-aos="fade-up" data-aos-delay={delay}>
                 <div className='choose-us-icon'>{icon}</div>
                 <h4>{title}</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur isicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut elit, sed do eiusmod te</p>
@@ -33,9 +35,9 @@ const About = () => {
         {id:4, name:'Ansel Adams', src:'/images/jpg/photographer-img-4.jpg'}
     ];
 
-    const TeamMemberCard = ({ name, src})=>(
+    const TeamMemberCard = ({ name, src, delay})=>(
         <div className="col-md-6 col-xl-3">
-            <div className="team-content-area mb-30 text-center">
+            <div className="team-content-area mb-30 text-center" data-aos="fade-up-right" data-aos-delay={delay}>
                 <div className="member-thumb">
                     <img src={src} alt="photographer-img" />
                 </div>
@@ -51,6 +53,14 @@ const About = () => {
         </div>
     );
 
+    useEffect(() => {
+          AOS.init({
+          duration: 1000, // Animation duration in milliseconds
+          once: true, // Whether animation should happen only once
+          easing: "ease-in-out", // Easing type
+        });
+      }, []);
+
   return (
     <div>
     <Header/>
@@ -59,7 +69,7 @@ const About = () => {
         <div className="container">
             <div className="row align-items-center">
                 <div className="col-12 col-lg-6">
-                   <div className="about-us-content mb-80">
+                   <div className="about-us-content mb-80" data-aos="fade-up-right">
                         <h2 className='about-us-title'>We Live For Passion</h2>
                         <div className='about-us-title-underline' ></div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing 
@@ -81,18 +91,18 @@ const About = () => {
         </div>
       </div>
 
-      <div className="why-choose-us-area section-padding-80-0 bg-light">
+      <div className="why-choose-us-area section-padding-80-0 bg-light App">
         <div className="container">
             <div className="row">
                 <div className="col-12">
-                    <div className="section-heading text-center">
+                    <div className="section-heading text-center" data-aos="fade-up">
                         <h2>Why Choose Us</h2>
                     </div>
                 </div>
             </div>
             <div className="row section-padding-50">
-                {whyChooseUsContent.map( content => (
-                    <WhyChooseUsCard key={content.id} {...content} />
+                {whyChooseUsContent.map( (content, index) => (
+                    <WhyChooseUsCard key={content.id} {...content} delay={index * 200}/>
                 ))}
             </div>
         </div>
@@ -102,15 +112,18 @@ const About = () => {
         <div className="container">
             <div className="row">
                 <div className="col-12">
-                    <div className="section-heading text-center">
+                    <div className="section-heading text-center" data-aos="fade-up-right">
                         <h2>Our Team</h2>
                     </div>
                 </div>
             </div>
             <div className="row">
 
-                {teamMemberContent.map(details=>(
-                    <TeamMemberCard key={details.id} {...details}/>
+                {teamMemberContent.map((details, index)=>(
+                    <TeamMemberCard 
+                    key={details.id} 
+                    {...details} 
+                    delay={index * 200}/>
                 ))}
 
         

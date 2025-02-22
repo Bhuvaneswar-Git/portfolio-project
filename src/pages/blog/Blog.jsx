@@ -1,6 +1,8 @@
 import React from "react";
 import Breadcrumb from "../../components/breadcrumb/Breadcrumb";
 import "./blog.css";
+import ScrollAd from '../../components/scrollAd/ScrollAd.jsx';
+import Footer from '../../components/footer/Footer.jsx'
 
 const blogPosts = [
   { id: 1, image: "images/jpg/insta-img-1.jpg", category: "Photography", date: "Jan 20, 2025", comments: "5 Comment", title: "The Female Body Shape Men Find Most Attractive", col: "col-12 col-lg-6" },
@@ -14,7 +16,7 @@ const blogPosts = [
   { id: 9, image: "images/jpg/insta-img-2.jpg", category: "Photography", date: "Jan 20, 2025", comments: "5 Comment", title: "The Female Body Shape Men Find Most Attractive", col: "col-12 col-lg-6" },
 ];
 
-const BlogPost = ({ image, category, date, comments, title, col }) => (
+const BlogPost = ({ image, category, date, comments, title, col}) => (
   <div className={col + " blog-img-content"}>
     <div className="single-post-area position-relative">
       <div className="post-thumbnail">
@@ -45,6 +47,9 @@ const Blog = () => {
           </div>
         </div>
       </div>
+      
+    <ScrollAd/>
+    <Footer/>
     </>
   );
 };

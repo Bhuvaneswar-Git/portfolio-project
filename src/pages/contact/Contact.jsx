@@ -1,6 +1,8 @@
 import React from 'react'
 import Breadcrumb from '../../components/breadcrumb/Breadcrumb';
-import './contact.css'
+import './contact.css';
+import ScrollAd from '../../components/scrollAd/ScrollAd.jsx';
+import Footer from '../../components/footer/Footer.jsx'
 
 const Contact = () => {
   return (
@@ -38,6 +40,8 @@ const Contact = () => {
                 </div>
             </div>
       </section>
+    <ScrollAd/>
+    <Footer/>
     </div>
   )
 }
