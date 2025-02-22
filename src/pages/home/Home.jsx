@@ -1,9 +1,10 @@
 import React from 'react';
 import './home.css';
 import CommonButton from '../../components/commonButton/CommonButton';
-import Gallery from '../gallery/Gallery';
 import Header from '../../components/header/Header.jsx';
-
+import OurService from '../../components/ourService/OurService.jsx';
+import ScrollAd from '../../components/scrollAd/ScrollAd.jsx';
+import Footer from '../../components/footer/Footer.jsx'
 
 const Home = () => {
   return (
@@ -33,7 +34,9 @@ const Home = () => {
             </div>
         </div>
       </section>
-      <Gallery showBreadcrumb={false}/>
+      <OurService/>
+      <ScrollAd/>
+      <Footer/>
     </div>
   )
 }

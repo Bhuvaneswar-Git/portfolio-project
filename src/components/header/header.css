@@ -78,3 +78,9 @@
 .navbar .classynav .link-redirect li a.active::after {
   width: 60%;
 }
+
+
+.nav-bar-content a{
+    color: #fff;
+    text-decoration: none;
+}

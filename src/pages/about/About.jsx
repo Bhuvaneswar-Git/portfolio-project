@@ -79,14 +79,7 @@ const About = () => {
                         <CommonButton buttonValue='Contact Us' textColor='text-black'/>
                    </div>
                 </div>
-                <div className="col-12 col-lg-6">
-                   <div className="about-video-area mb-80">
-                        <img src="/images/jpg/about-us-img.jpg" alt="" />
-                        <div>
-                            <a href=""></a>
-                        </div>
-                   </div>
-                </div>
+
             </div>
         </div>
       </div>

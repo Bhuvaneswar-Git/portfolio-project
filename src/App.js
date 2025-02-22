@@ -7,7 +7,7 @@ import About from './pages/about/About';
 import Gallery from './pages/gallery/Gallery';
 import Blog from './pages/blog/Blog';
 import Contact from './pages/contact/Contact';
-import ScrollToTop from './components/scrollToTop/ScrollToTop';
+import ScrollToTop from './components/scrollToTop/ScrollToTop.jsx';
 
 function App() {
   return (

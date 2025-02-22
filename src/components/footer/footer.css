@@ -28,3 +28,9 @@
 .social-info a svg:hover {
     color: #fc6060;
 }
+
+
+.logo a {
+    color: #252525;
+    text-decoration: none;
+}
