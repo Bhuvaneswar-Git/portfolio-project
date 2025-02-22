@@ -15,7 +15,7 @@ const Breadcrumb = ({pageTitle,currentPage}) => {
                         <nav className='breadcrum'>
                             <ol className='breadcrum-link p-0'>
                                 <li className='breadcrum-item px-3'>
-                                    <a href="#">
+                                    <a href="/">
                                     <IoHomeOutline />
                                         Home
                                     </a>

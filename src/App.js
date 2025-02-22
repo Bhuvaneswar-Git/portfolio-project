@@ -3,7 +3,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
-import ScrollAd from './components/scrollAd/ScrollAd';
+
 import Home from './pages/home/Home';
 import About from './pages/about/About';
 import Gallery from './pages/gallery/Gallery';
@@ -16,14 +16,14 @@ function App() {
         <Router>
             <Header/>
             <Routes>
-                <Route path='/home' element={<Home/>}/>
+                <Route path='/' element={<Home/>}/>
                 <Route path='/about' element={<About/>}/>
                 <Route path='/gallery' element={<Gallery/>}/>
                 <Route path='/blog' element={<Blog/>}/>
                 <Route path='/contact' element={<Contact/>}/>
             </Routes>
-            <ScrollAd/>
-            <Footer/>
+            {/* <ScrollAd/> */}
+            {/* <Footer/> */}
         </Router>
 
     </>

@@ -31,7 +31,7 @@ const Header = () => {
             <div className={`main-header-area ${isSticky? 'sticky' : ''}`} > 
                 <div className="container">
                     <nav className='nav-bar-content justify-content-around'>
-                        <a href="home">Bhuvaneswar</a>
+                        <a href="/">Bhuvaneswar</a>
                         <div className="navbar">
                             <div className="classynav">
                                 <ul className='link-redirect'>  

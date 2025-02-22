@@ -1,5 +1,8 @@
 import React from 'react';
 import './about.css';
+import ScrollAd from "../../components/scrollAd/ScrollAd.jsx"
+import Header from '../../components/header/Header.jsx';
+import Footer from '../../components/footer/Footer.jsx';
 import Breadcrumb  from '../../components/breadcrumb/Breadcrumb.jsx';
 import CommonButton from '../../components/commonButton/CommonButton.jsx';
 import { IoCamera, IoFilmOutline } from "react-icons/io5";
@@ -49,7 +52,8 @@ const About = () => {
     );
 
   return (
-    <>
+    <div>
+    <Header/>
         <Breadcrumb pageTitle='About Us' currentPage='About'/>
       <div className='about-us-area section-padding'>
         <div className="container">
@@ -109,27 +113,13 @@ const About = () => {
                     <TeamMemberCard key={details.id} {...details}/>
                 ))}
 
-               {/* <div className="col-md-6 col-xl-3">
-                    <div className="team-content-area mb-30 text-center">
-                        <div className="member-thumb">
-                            <img src="/images/jpg/photographer-img-1.jpg" alt="photographer-img" />
-                        </div>
-                        <h2>Bhuvaneswar</h2>
-                        <span>Photographer</span>
-                        <div className="member-social-info">
-                            <a href="#"><FaYoutube/></a>
-                            <a href="#"><FaFacebookF/></a>
-                            <a href="#"><FaInstagram/></a>
-                            <a href="#"><FaWhatsapp/></a>
-                        </div>
-                    </div>
-               </div> */}
-
+        
             </div>
         </div>
       </div>
-
-    </>
+<ScrollAd/>
+<Footer/>
+    </div>
   )
 }
 
