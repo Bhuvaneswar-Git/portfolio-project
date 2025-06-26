@@ -9,9 +9,6 @@ My code is based on a frontend stack that includes HTML, CSS, and JavaScript, al
 - 🎨 My focus is on clean, efficient, and maintainable code to build seamless digital experiences.
 - 🚀 I work with modern web technologies to ensure performance and responsiveness.
 
-### 🖼️ My Work
-Check out my portfolio: [Sample Portfolio Website](https://your-portfolio.com/)  
-
 ### 🔧 Tech Stack (For This Website)
 This project is built with a frontend-focused approach, ensuring a clean and efficient code structure. The technologies used include:
 - 💻 Frontend: HTML, CSS, Javascript, React.js
